@@ -79,7 +79,7 @@ function nameblur()
 	if(name.textContent=="")
 	{
 		name.textContent="[Enter Name]";
-		name.style.color="gray";
+		//name.style.color="gray";
 		//name.style.fontStyle="italic";
 	}
 }
@@ -113,7 +113,10 @@ function namefocus()
       localStorage.setItem('name', e.target.innerText);
     }
   }
+
   
+
+
   // Get Focus
   function getFocus() {
     if (localStorage.getItem('focus') === null) {
@@ -149,4 +152,3 @@ function namefocus()
   getFocus();
   namefocus();
   nameblur();
-  
